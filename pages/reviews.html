@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dynamic Review Section</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/reviews.css" />
+  </head>
+  <body>
+        <!-- header  -->
+    <header id="home">
+
+      <nav class="nav">
+        <div class="nav-header">
+          <i id="paw" class="fa-solid fa-paw">
+
+            <a href="./doggie.html">xds</a>
+          </i>
+        </div>
+        <button type="button" class="nav-toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-center">
+          <!-- nav header -->
+          <!-- end of nav header -->
+          <!-- nav links -->
+          <ul class="main-nav-links" id="main-nav-links">
+            <!-- single link -->
+            <li>
+              <a
+                href="../pages/doggie.html"
+                class="main-nav-link scroll-link"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                id="services"
+                href="#services"
+                target="_blank"
+                class="main-nav-link scroll-link"
+                >services</a
+              >
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="#about" target="_blank"
+              id="about"
+              class="main-nav-link scroll-link"
+                >about</a
+              >
+            </li>
+            <!-- end of single link -->
+
+            <!-- single link -->
+            <li>
+              <a href="#gallery" target="_blank"
+              id="gallery"
+              class="main-nav-link scroll-link"
+                >gallery</a
+              >
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="#contact" target="_blank"
+              id="contact"
+              class="main-nav-link scroll-link"
+                >contact us</a
+              >
+            </li>
+            <!-- end of single link -->
+          </ul>
+          <!-- end of nav links -->
+
+          <!-- nav icons -->
+        </div>
+        <div><ul class="nav-icons">
+            <!-- single icon -->
+            <li>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <!-- end of single icon -->
+            <!-- single icon -->
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="nav-icon"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <!-- end of single icon -->
+            <!-- single icon -->
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="nav-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <!-- end of single icon -->
+          </ul></div>
+      </nav>
+          <!-- end of nav icons -->
+        <div class="review-container">
+            <img class="figure-img" src="" alt="">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"Excellent service! Highly recommended."</p>
+            <p><em>- John Doe</em></p>
+        </div>
+        <!-- Additional reviews will be added here dynamically -->
+        <div class="nav-buttons">
+            <button class="btn nav-button" id="prevBtn">Previous</button>
+            <button class="btn nav-button" id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <form id="reviewForm" method="POST">
+        <h3>tell us about your experience</h3>
+        <label for="reviewText">Review:</label>
+        <textarea id="reviewText" name="reviewText" rows="4" cols="50" required></textarea>
+        <label for="reviewAuthor">Your Name:</label>
+        <input type="text" id="reviewAuthor" name="reviewAuthor" required>
+        <br>
+        <br>
+        <button class="btn btn-submit" type="submit">Submit Review</button>
+    </form>
+    <br>
+        <!-- footer -->
+    <footer class="footer">
+    <div class="footer section-center">
+      <!-- footer links -->
+      <ul class="footer-links">
+        <!-- single link -->
+        <li>
+          <a href="#home" class="footer-link scroll-link">home</a>
+        </li>
+        <!-- end of single link -->
+
+        <!-- single link -->
+        <li>
+          <a href="#services" class="footer-link scroll-link">services</a>
+        </li>
+        <!-- end of single link -->
+
+        <!-- single link -->
+        <li>
+          <a href="#about" class="footer-link scroll-link">about us</a>
+        </li>
+        <!-- end of single link -->
+
+        <!-- single link -->
+        <li>
+          <a href="#gallery" class="footer-link scroll-link">gallery</a>
+        </li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li>
+          <a href="#contact" class="footer-link scroll-link">contact</a>
+        </li>
+        <!-- end of single link -->
+      </ul>
+      <!-- end of footer links -->
+      <!-- footer icons -->
+      <ul class="footer-icons">
+        <!-- single icon -->
+        <li>
+          <a href="https://www.twitter.com" target="_blank" class="footer-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <!-- end of single icon -->
+        <!-- single icon -->
+        <li>
+          <a href="https://www.facebook.com" target="_blank" class="footer-icon"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <!-- end of single icon -->
+        <!-- single icon -->
+        <li>
+          <a
+            href="https://www.squarespace.com"
+            target="_blank"
+            class="footer-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <!-- end of single icon -->
+      </ul>
+      <!-- end of footer icons -->
+      <p class="copyright">
+        copyright &copy; Xtreme Doggie Stylz <span id="date"></span>
+        all rights reserved
+      </p>
+    </div>
+    </footer>
+    <script src="../js/reviews.js"></script>
+</body>
+</htm>
